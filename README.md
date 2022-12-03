@@ -12,23 +12,30 @@ A University Assignment. Clearly Used to Solve anhy Porblem and Perform Computer
 
 ## Method and results
 
-Start
-Define function
-Get the values of x0, y0, h and xn
-*Here x0 and y0 are the initial conditions
-h is the interval
-xn is the required value
-n = (xn – x0)/h + 1
-Start loop from i=1 to n
-y = y0 + h*f(x0,y0)
-x = x + h
-Print values of y0 and x0
-Check if x < xn
-If yes, assign x0 = x and y0 = y
-If no, goto 9.
-End loop i
-Stop
+1. Start
 
+2. Define function f(x,y)
+
+3. Read values of initial condition(x0 and y0), 
+   number of steps (n) and calculation point (xn)
+   
+4. Calculate step size (h) = (xn - x0)/b
+
+5. Set i=0
+
+6. Loop 
+      
+      yn = y0 + h *  f(x0 + i*h, y0) 
+      
+      y0 = yn
+      
+      i = i + 1
+
+   While i < n
+
+7. Display yn as result
+
+8. Stop
 
 ## Repository overview
 
